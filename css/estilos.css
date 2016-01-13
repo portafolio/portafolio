@@ -1,0 +1,263 @@
+@import "style-font.css";
+@import "fonts.css";
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: #f8f8f8;
+  margin-bottom: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+.hidden {
+  display: none;
+}
+.before:before {
+  content: "•";
+  margin-right: 0.2em;
+}
+.border {
+  padding-top: 1em;
+  border-top: 2px solid #dfdfdd;
+}
+.bt {
+  margin-top: 2.2em;
+}
+.cont {
+  padding: 1.2em 1.2em 0 1.2em;
+  margin: 0 auto;
+  width: 80%;
+  line-height: 1.5em;
+}
+.work-title {
+  font-size: 1.2em;
+}
+.header {
+  position: relative;
+  height: 8.2em;
+}
+.header .titulo {
+  font-size: 1.2em;
+  position: absolute;
+  margin: 0;
+  left: 1em;
+  top: 1.5em;
+  color: #717070;
+}
+.header .btn {
+  right: 2em;
+  top: 1.5em;
+  position: absolute;
+  transition: 0.5s;
+}
+.header .mostrar.is-active {
+  display: none;
+}
+.header .hidden-menu.is-active {
+  display: none;
+}
+.header p {
+  color: #ce534b;
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+.menu .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu .list .item {
+  padding: 1em;
+  cursor: pointer;
+  border-top: 1px solid #ebebe9;
+  transition: 0.5s;
+}
+.menu .list .item:last-child {
+  border-bottom: 1px solid #ebebe9;
+}
+.menu .list .item:hover {
+  margin-left: 0.7em;
+}
+.menu .list .item:hover a {
+  color: #ce534b;
+}
+.menu .list .item a {
+  padding: 1em 60vw 1em 0;
+  color: #717070;
+}
+.menu.is-active {
+  display: none;
+}
+.container {
+  color: #717070;
+}
+.container .name {
+  font-weight: normal;
+  padding: 0.5em;
+  background-image: url("../images/pat.png");
+}
+.container .description {
+  text-align: left;
+  margin-bottom: 2em;
+}
+.container .description span {
+  text-decoration: underline;
+}
+.habilities {
+  color: #717070;
+  margin-bottom: 2em;
+}
+.habilities .title {
+  font-weight: normal;
+}
+.habilities .lista {
+  position: relative;
+}
+.habilities .lista-item {
+  margin-left: 1.3em;
+}
+.habilities .lista li {
+  list-style: none;
+  padding: 0.6em;
+}
+.portafolio {
+  color: #717070;
+}
+.portafolio .title {
+  font-weight: normal;
+}
+.work {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.work-description {
+  letter-spacing: 1px;
+  line-height: 1.4em;
+}
+.work-image {
+  height: auto;
+  max-width: 1024px;
+  overflow: hidden;
+  padding: 1em;
+}
+.work .image-list {
+  list-style: none;
+}
+.work-title {
+  padding-top: 1em;
+}
+.footer {
+  background: #404040;
+  color: #ce534b;
+  padding: 0.6em;
+}
+-description p {
+  margin: 0;
+}
+@media screen and (min-width: 1000px) {
+  .cont {
+    width: 95%;
+    margin: 0;
+    padding: 0 1.2em 0 0;
+  }
+  .left,
+  .right {
+    vertical-align: top;
+    display: inline-block;
+  }
+  .left {
+    height: 193em;
+    width: 37%;
+    background: #ebebe9;
+  }
+  .right {
+    width: 58%;
+    margin-left: 2em;
+  }
+  .header {
+    display: block;
+  }
+  .header .titulo {
+    position: fixed;
+    top: 4em;
+    left: 2em;
+  }
+  .mostrar,
+  .hidden-menu {
+    display: none;
+  }
+  .menu {
+    margin-left: 4em;
+    margin-top: 4em;
+    width: 25%;
+    position: fixed;
+  }
+  .menu.is-active {
+    display: block;
+  }
+  .menu .list {
+    width: 90%;
+  }
+  .menu .list .item {
+    border-top: 1px solid #dadace;
+  }
+  .menu .list .item:last-child {
+    border-bottom: 1px solid #dadace;
+  }
+  .menu .list .item a {
+    padding: 1em 15vw 1em 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cont {
+    width: 90%;
+  }
+  .bt {
+    margin-top: 1.2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  #titulo {
+    font-size: 15px;
+  }
+  .header .btn {
+    right: 1em;
+  }
+  .name {
+    font-size: 1.5em;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .work {
+    font-size: 0.9em;
+  }
+}

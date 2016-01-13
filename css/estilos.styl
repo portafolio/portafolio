@@ -1,0 +1,214 @@
+@import "style-font.css"
+@import "fonts.css"
+@import "slider.styl"
+gris_light = #F8F8F8
+gris_claro = #f3f3f3
+gris_oscuro = #ebebe9
+gris_mas_oscuro = #dfdfdd
+gris = #717070
+rojo = #ce534b
+rojo_claro = #EC5850
+gris_A = #E8E8E8
+
+
+a
+  text-decoration none
+
+body
+  background gris_light
+  margin-bottom 0
+
+  font-family 'Varela Round', sans-serif
+.hidden
+  display none
+.before
+  &:before
+    content "•"
+    margin-right .2em
+.border
+  padding-top 1em
+  border-top 2px solid gris_mas_oscuro
+.bt
+  margin-top 2.2em
+
+.cont
+  padding 1.2em 1.2em 0 1.2em
+  margin 0 auto
+  width 80%
+  line-height 1.5em
+
+.work
+  &-title
+    font-size 1.2em
+
+.header
+  position relative
+  //background grey
+  height 8.2em
+  .titulo
+    //float left
+    font-size 1.2em
+    position absolute
+    margin 0
+    left 1em
+    top 1.5em
+    color gris
+
+  .btn
+      right 2em
+      top 1.5em
+      position absolute
+      transition .5s
+    .mostrar
+      &.is-active
+        display none
+    .hidden-menu
+      &.is-active
+        display none
+    p
+      color rojo
+      margin 0
+      cursor pointer
+      font-size 1.5em
+
+.menu
+  .list
+    list-style none
+    margin 0
+    padding 0
+    .item
+      padding 1em
+      cursor pointer
+      border-top 1px solid gris_oscuro
+      transition .5s
+      &:last-child
+        border-bottom 1px solid gris_oscuro
+      &:hover
+        margin-left .7em
+        a
+          color rojo
+      a
+        padding 1em 60vw 1em 0
+
+        color gris
+  &.is-active
+    display none
+.container
+  color gris
+  .name
+    font-weight normal
+    //font-size 1.8em
+    padding .5em
+    background-image url("../images/pat.png")
+  .description
+    text-align left
+    margin-bottom 2em
+    span
+      text-decoration underline
+
+.habilities
+  color gris
+  margin-bottom 2em
+  .title
+    font-weight normal
+  .lista
+    position relative
+    &-item
+      margin-left 1.3em
+    li
+      list-style none
+      padding .6em
+
+.portafolio
+  color gris
+  .title
+    font-weight normal
+
+.work
+  //margin 0 auto
+  padding-top 2em
+  padding-bottom 2em
+  &-description
+    letter-spacing 1px
+    line-height 1.4em
+  &-image
+    height auto
+    max-width 1024px
+    overflow hidden
+    padding 1em
+
+
+  .image-list
+    list-style none
+
+  &-title
+    padding-top 1em
+.footer
+    background #404040
+    color rojo
+    padding .6em
+  &-description
+
+    p
+      margin 0
+
+@media screen and (min-width: 1000px)
+  .cont
+    width 95%
+    margin 0
+    padding 0 1.2em 0 0
+  .left
+  .right
+    vertical-align top
+    display inline-block
+  .left
+    height 193em
+    width 37%
+    background gris_oscuro
+  .right
+    width 58%
+    margin-left 2em
+
+  .header
+
+    display block
+    .titulo
+      position fixed
+      top 4em
+      left 2em
+  .mostrar
+  .hidden-menu
+    display none
+  .menu
+    margin-left 4em
+    margin-top 4em
+    width 25%
+    position fixed
+    &.is-active
+      display block
+    .list
+      width 90%
+      .item
+        border-top 1px solid #DADACE
+        &:last-child
+          border-bottom 1px solid #DADACE
+        a
+          padding 1em 15vw 1em 0
+@media screen and (max-width: 767px)
+  .cont
+    width 90%
+  .bt
+    margin-top 1.2em
+
+@media screen and (max-width: 480px)
+  #titulo
+    font-size 15px
+  .header
+    .btn
+      right 1em
+  .name
+    font-size 1.5em
+  .description
+    font-size 1rem
+  .work
+    font-size .9em
